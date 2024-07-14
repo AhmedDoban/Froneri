@@ -1,0 +1,225 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Header
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Header {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #c6c6c6;
+  background-color: #fff;
+  width: 100%;
+  z-index: 999;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Header container
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Header .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Header container top
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Header .container .Top-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+}
+@media (max-width: 992px) {
+  .Header .container .Top-content {
+    padding: 10px 0;
+  }
+}
+.Header .container .Top-content .left {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+@media (max-width: 992px) {
+  .Header .container .Top-content .left {
+    display: none;
+  }
+}
+.Header .container .Top-content .left span {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  color: #006779;
+}
+.Header .container .Top-content .left i {
+  color: #00bbdc;
+  font-size: 16px;
+  cursor: pointer;
+}
+.Header .container .Top-content .center {
+  position: relative;
+  width: 150px;
+  height: 35px;
+}
+@media (max-width: 992px) {
+  .Header .container .Top-content .center {
+    width: 100px;
+    height: 25px;
+  }
+}
+.Header .container .Top-content .center img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.Header .container .Top-content .right {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.Header .container .Top-content .right button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 10px 12px;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  color: #e6f8fc;
+  background-color: #00aac8;
+  border: 1px solid #00aac8;
+  font-size: 14px;
+  font-weight: 400;
+  transition: var(--main-transition);
+}
+.Header .container .Top-content .right button:hover {
+  background-color: #004f5c;
+  border: 1px solid #00859c;
+}
+.Header .container .Top-content .right button img {
+  width: 20px;
+  height: 20px;
+}
+.Header .container .Top-content .right .MobileNav {
+  position: relative;
+  display: none;
+  color: #00bbdc;
+  cursor: pointer;
+  font-size: 16px;
+}
+@media (max-width: 992px) {
+  .Header .container .Top-content .right .MobileNav {
+    display: flex;
+  }
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Header container bottom
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Header .container .bottom-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--main-transition);
+  z-index: 1000;
+}
+.Header .container .bottom-content .Follow,
+.Header .container .bottom-content .MobileNavExit {
+  display: none;
+}
+@media (max-width: 992px) {
+  .Header .container .bottom-content {
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    right: -305px;
+    height: 100vh;
+    border-left: 1px solid #c6c6c6;
+    background-color: #fff;
+  }
+  .Header .container .bottom-content.active {
+    right: 0;
+  }
+  .Header .container .bottom-content .Follow {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+  }
+  .Header .container .bottom-content .Follow span {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    color: #006779;
+  }
+  .Header .container .bottom-content .Follow i {
+    color: #00bbdc;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .Header .container .bottom-content .MobileNavExit {
+    position: absolute;
+    display: flex;
+    top: 15px;
+    left: 15px;
+    font-size: 16px;
+    color: #e6f8fc;
+    background-color: #00aac8;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+  }
+}
+.Header .container .bottom-content ul {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media (max-width: 992px) {
+  .Header .container .bottom-content ul {
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 300px;
+    max-width: 100%;
+  }
+}
+.Header .container .bottom-content ul li a {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px;
+  display: flex;
+  color: #006779;
+}
+.Header .container .bottom-content ul li a::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: #00bbdc;
+  transition: var(--main-transition);
+}
+.Header .container .bottom-content ul li a.active::before,
+.Header .container .bottom-content ul li a:hover::before {
+  width: 100%;
+}

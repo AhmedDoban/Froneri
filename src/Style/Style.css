@@ -1,0 +1,66 @@
+@font-face {
+  font-family: Inter;
+  src: url("./Font/Inter-Light.ttf") format(truetype);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Inter;
+  src: url("./Font/Inter-Regular.ttf") format(truetype);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Inter;
+  src: url("./Font/Inter-SemiBold.ttf") format(truetype);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Inter;
+  src: url("./Font/Inter-Bold.ttf") format(truetype);
+  font-weight: 700;
+}
+
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+General
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Inter;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.container {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*Mobile Screen*/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/*Tab Screen*/
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/*PC Screen*/
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
