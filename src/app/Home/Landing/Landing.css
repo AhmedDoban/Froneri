@@ -1,0 +1,115 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Landing
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Landing {
+  position: relative;
+  height: calc(100vh - 110px);
+  width: 100%;
+}
+.Landing::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../../../../public/LandingBackground.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
+}
+@media (max-width: 992px) {
+  .Landing {
+    height: calc(100vh - 63px);
+  }
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Landing container
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Landing .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  gap: 20px;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Landing container top
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Landing .container .top {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+.Landing .container .top h1 {
+  position: relative;
+  font-size: 60px;
+  width: 75%;
+  font-weight: 700;
+  text-align: center;
+  color: #004f5c;
+}
+@media (max-width: 992px) {
+  .Landing .container .top h1 {
+    font-size: 40px;
+  }
+}
+.Landing .container .top > span {
+  position: relative;
+  font-size: 16px;
+  width: 75%;
+  font-weight: 300;
+  text-align: center;
+  color: #474747;
+  line-height: 1.7;
+}
+.Landing .container .top button {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  border: 1px solid #00aac8;
+  background-color: #00aac8;
+  color: #e6f8fc;
+  transition: var(--main-transition);
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.Landing .container .top button:hover {
+  background-color: #004f5c;
+  border: 1px solid #00859c;
+}
+.Landing .container .top button img {
+  width: 15px;
+  height: 15px;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Landing container img-content
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Landing .container .img-content {
+  position: relative;
+  height: 50%;
+  width: 100%;
+  border: 1px solid #004f5c;
+  border-radius: 20px 20px 0px 0px;
+  overflow: hidden;
+}
+.Landing .container .img-content img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

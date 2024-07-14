@@ -8,7 +8,7 @@ function Header() {
   const [NavOpen, SetNavOpen] = useState(false);
   const NavRef = useRef();
 
-  if (window !== undefined) {
+  if (window !== "undefined") {
     window.addEventListener("click", (e) => {
       if (NavRef.current !== null) {
         if (e.target !== NavRef.current) {
