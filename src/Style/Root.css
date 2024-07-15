@@ -6,4 +6,28 @@
   --main-border-radius: 0.5rem;
   --main-padding-top: 50px;
   --main-padding-bottom: 50px;
+  --main-color: #00859c;
+  --main-color-hover: #004f5c;
+  --main-text-color: #474747;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Scroll bar
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  box-shadow: 0 4px 30px #00859c;
+  backdrop-filter: blur(50px);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #004f5c;
+}
+.hideScroll::-webkit-scrollbar {
+  display: none;
 }

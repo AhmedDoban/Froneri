@@ -1,0 +1,196 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# OurPrograms
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.OurPrograms {
+  position: relative;
+  width: 100%;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  background-color: #e6f8fc;
+}
+.OurPrograms::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../../../../public/LandingBackground.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}
+.OurPrograms::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(230, 248, 252, 0) 0%, #dceef2 100%);
+  z-index: 1;
+}
+
+.OurPrograms .OurPrograms_Cicle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.OurPrograms .OurPrograms_Cicle::before {
+  position: absolute;
+  content: "";
+  width: 400px;
+  height: 450px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../../../../public/circleLeft.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.OurPrograms .OurPrograms_Cicle::after {
+  position: absolute;
+  content: "";
+  width: 300px;
+  height: 450px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../../../../public/circleRight.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# OurPrograms container
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.OurPrograms .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  gap: 30px;
+  z-index: 2;
+}
+.OurPrograms .container .info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  width: 60%;
+  max-width: 100%;
+}
+@media (max-width: 772px) {
+  .OurPrograms .container .info {
+    width: 100%;
+  }
+}
+.OurPrograms .container .info img {
+  position: relative;
+  width: 100px;
+  height: auto;
+}
+
+.OurPrograms .container .info h2 {
+  position: relative;
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--main-color-hover);
+}
+.OurPrograms .container .info p {
+  position: relative;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--main-text-color);
+  line-height: 1.4;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# OurPrograms Programs_Container
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.OurPrograms .Programs_Container {
+  position: relative;
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 992px) {
+  .OurPrograms .Programs_Container {
+    flex-direction: column;
+  }
+}
+.OurPrograms .Programs_Container .box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  padding: 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.OurPrograms .Programs_Container .box:first-child {
+  flex: 1.5;
+}
+.OurPrograms .Programs_Container .box:last-child {
+  flex: 1;
+}
+.OurPrograms .Programs_Container .box:hover {
+  background-color: #00aac8;
+  border: 1px solid #8ae0ef;
+}
+
+.OurPrograms .Programs_Container .box > img {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border-radius: 13px;
+  object-fit: cover;
+}
+.OurPrograms .Programs_Container .box h3 {
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  transition: var(--main-transition);
+  margin-top: 5px;
+}
+
+.OurPrograms .Programs_Container .box p {
+  position: relative;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.7;
+  transition: var(--main-transition);
+}
+.OurPrograms .Programs_Container .box:hover h3,
+.OurPrograms .Programs_Container .box:hover p {
+  color: #fff;
+}
+.OurPrograms .Programs_Container .box button {
+  position: relative;
+  width: fit-content;
+  padding: 10px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--main-color);
+  background-color: var(--main-color);
+  transition: var(--main-transition);
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: 10px;
+  color: #e6f8fc;
+  cursor: pointer;
+}
+.OurPrograms .Programs_Container .box button img {
+  width: 15px;
+  height: 15px;
+}
+.OurPrograms .Programs_Container .box button:hover {
+  border: 1px solid var(--main-color-hover);
+  background-color: var(--main-color-hover);
+}
