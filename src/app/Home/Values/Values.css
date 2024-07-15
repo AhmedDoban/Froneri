@@ -34,6 +34,7 @@
   font-size: 14px;
   font-weight: 300;
   color: #474747;
+  text-align: center;
 }
 .Values .container .info .Info-Head {
   position: relative;
@@ -103,6 +104,7 @@
   color: #1e1e1e;
   font-size: 13px;
   font-weight: 300;
+  text-align: center;
 }
 .Values .container .Values-container .MoreDetailsBox {
   position: relative;
