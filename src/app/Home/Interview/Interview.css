@@ -1,0 +1,191 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Interview
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Interview {
+  position: relative;
+  width: 100%;
+  padding-top: calc(var(--main-padding-top) * 1.5);
+  padding-bottom: calc(var(--main-padding-bottom) * 1.5);
+  background-color: #ffffff;
+}
+.Interview::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../../../../public/LandingBackground.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.05;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Interview container
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Interview .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Interview container left
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Interview .container .LeftSide {
+  position: relative;
+  width: 82%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+@media (max-width: 992px) {
+  .Interview .container .LeftSide {
+    width: 100%;
+  }
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Interview container left head
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Interview .container .LeftSide .InterviewHead {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+@media (max-width: 776px) {
+  .Interview .container .LeftSide .InterviewHead {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}
+.Interview .container .LeftSide .InterviewHead h1 {
+  position: relative;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+@media (max-width: 776px) {
+  .Interview .container .LeftSide .InterviewHead h1 {
+    font-size: 30px;
+  }
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Interview container left head ApplicationBox
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Interview .container .LeftSide .InterviewHead .ApplicationBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  border-radius: 12px;
+  background-color: #00bbdc;
+  border: 1px solid #54d1e8;
+  box-shadow: 25px 20px 25px 0px #b5b5b533;
+  padding: 25px;
+}
+.Interview .container .LeftSide .InterviewHead .ApplicationBox p {
+  position: relative;
+  font-size: 15px;
+  font-weight: 400;
+  color: #e6f8fc;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Interview container StepsToTake
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Interview .container .LeftSide .StepsToTake {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  row-gap: 25px;
+  column-gap: 20px;
+  counter-reset: Step;
+  width: 82%;
+}
+@media (max-width: 992px) {
+  .Interview .container .LeftSide .StepsToTake {
+    width: 80%;
+  }
+}
+@media (max-width: 776px) {
+  .Interview .container .LeftSide .StepsToTake {
+    width: 100%;
+  }
+}
+.Interview .container .LeftSide .StepsToTake li {
+  position: relative;
+  padding-left: 50px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.7;
+  counter-increment: Step;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.Interview .container .LeftSide .StepsToTake li::before {
+  position: absolute;
+  content: counter(Step);
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #8ae0ef;
+  background-color: #b0eaf4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #006779;
+  font-size: 16px;
+  font-weight: 400;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Interview container ShowMore
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Interview .container .LeftSide .ShowMore button {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  color: #e6f8fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: fit-content;
+  padding: 12px 16px;
+  min-width: 140px;
+  border-radius: 10px;
+  border: 1px solid #00aac8;
+  background-color: #00aac8;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.Interview .container .LeftSide .ShowMore button:hover {
+  background-color: var(--main-color-hover);
+  color: #fff;
+}
+
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Interview container Right
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Interview .RightSide {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 48%;
+  height: 100%;
+  background-image: url("../../../../public/interview.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 776px) {
+  .Interview .RightSide {
+    display: none;
+  }
+}
