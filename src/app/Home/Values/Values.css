@@ -1,0 +1,160 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Values
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Values {
+  position: relative;
+  width: 100%;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  background-color: #ffffff;
+}
+
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Values container
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Values .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Values container info
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Values .container .info {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.Values .container .info p {
+  position: relative;
+  font-size: 14px;
+  font-weight: 300;
+  color: #474747;
+}
+.Values .container .info .Info-Head {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.Values .container .info .Info-Head h3 {
+  position: relative;
+  font-size: 33px;
+  font-weight: 700;
+  color: #004f5c;
+  padding: 0 0 12px 0;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Values container Values-container
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Values .container .Values-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.Values .container .Values-container .box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  padding: 28px 0;
+  border-radius: 10px;
+  border: 1px solid #ededed;
+  background-color: #fcfcfc;
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.Values .container .Values-container .box .value-img-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.Values .container .Values-container .box .value-img-box::before {
+  position: absolute;
+  content: "";
+  width: calc(50% - 25px);
+  right: -0px;
+  height: 1px;
+  background-color: #ededed;
+}
+.Values .container .Values-container .box h3 {
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: #1e1e1e;
+}
+
+.Values .container .Values-container .box p {
+  position: relative;
+  padding: 0 28px;
+  line-height: 1.7;
+  color: #1e1e1e;
+  font-size: 13px;
+  font-weight: 300;
+}
+.Values .container .Values-container .MoreDetailsBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Values .container .Values-container .MoreDetailsBox img {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  transition: var(--main-transition);
+}
+.Values .container .Values-container .box:hover .MoreDetailsBox img {
+  animation: UpADown 0.7s ease-in-out alternate infinite;
+}
+@keyframes UpADown {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Values container ShowMore
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Values .container .ShowMore {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Values .container .ShowMore button {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  color: #e6f8fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: fit-content;
+  padding: 12px 16px;
+  min-width: 140px;
+  border-radius: 10px;
+  border: 1px solid #00aac8;
+  background-color: #00aac8;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.Values .container .ShowMore button:hover {
+  background-color: var(--main-color-hover);
+  color: #fff;
+}

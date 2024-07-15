@@ -138,7 +138,8 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  column-gap: 15px;
+  row-gap: 25px;
 }
 .Career .container .Career_Container .box {
   position: relative;
@@ -256,4 +257,8 @@
   background-color: #e6f8fc;
   cursor: pointer;
   transition: var(--main-transition);
+}
+.Career .container .ShowMore button:hover {
+  background-color: #00859c;
+  color: #fff;
 }
