@@ -10,7 +10,7 @@ function OurPrograms() {
             <Image src="/logo.svg" width={100} height={30} alt="Froneri" />
             <h2>Our programs</h2>
             <p>
-              you'll have the chance to work on cutting-edge projects that shape
+              you&apos;ll have the chance to work on cutting-edge projects that shape
               the future of technology, while continuously honing your skills
               and expertise
             </p>

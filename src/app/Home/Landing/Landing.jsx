@@ -10,7 +10,7 @@ export default function Landing() {
           <h1>Chart your way to success with Froneri</h1>
           <span>
             Joining our team means immersing yourself in a dynamic,
-            innovation-driven environment where you'll collaborate with some of
+            innovation-driven environment where you&apos;ll collaborate with some of
             the brightest minds in the industry
           </span>
           <button>
