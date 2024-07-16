@@ -80,12 +80,7 @@ function Career() {
         <div className="ShowMore">
           <button>
             <span>All Vacanies</span>
-            <Image
-              src="/Career/Arrow_Right_Gray.svg"
-              width={15}
-              height={15}
-              alt="arrow-right"
-            />
+            <i className="fa-solid fa-arrow-right"></i>
           </button>
         </div>
       </div>

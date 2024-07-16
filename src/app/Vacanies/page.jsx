@@ -54,6 +54,7 @@ function Vacanies() {
               onPageChange={setCurrentPage}
               previousLabel={<i className="fa-solid fa-arrow-left"></i>}
               nextLabel={<i className="fa-solid fa-arrow-right"></i>}
+              maxWidth={100}
             />
           </div>
         </div>
@@ -110,6 +111,7 @@ function Vacanies() {
             onPageChange={setCurrentPage}
             previousLabel={<i className="fa-solid fa-arrow-left"></i>}
             nextLabel={<i className="fa-solid fa-arrow-right"></i>}
+            maxWidth={100}
           />
         </div>
       </div>

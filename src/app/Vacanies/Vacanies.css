@@ -130,6 +130,13 @@
   align-items: center;
   gap: 10px;
 }
+@media (max-width: 776px) {
+  .Vacanies .container .Navigation-Info {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+}
 .Vacanies .container .Navigation-Info .left {
   position: relative;
   display: flex;
@@ -155,6 +162,12 @@
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 # Vacanies container PaginationPanal
 ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+@media (max-width: 776px) {
+  .Vacanies .container .PaginationPanal {
+    position: relative;
+    width: 100%;
+  }
+}
 .Vacanies .container .pagination {
   justify-content: center;
   display: flex;
