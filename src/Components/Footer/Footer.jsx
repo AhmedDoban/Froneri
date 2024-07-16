@@ -27,7 +27,7 @@ function Footer() {
             <Image src="/Logo-white.svg" width={150} height={40} alt="logo" />
             <p>
               Joining our team means immersing yourself in a dynamic,
-              innovation-driven environment where you'll collaborate with some
+              innovation-driven environment where you&apos;ll collaborate with some
               of the brightest minds in the industry
             </p>
           </div>

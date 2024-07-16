@@ -11,7 +11,7 @@ function Values() {
             <h3>Values</h3>
           </div>
           <p>
-            It's not only the results that define a business, but also the
+            It&apos;s not only the results that define a business, but also the
             people.
           </p>
         </div>
