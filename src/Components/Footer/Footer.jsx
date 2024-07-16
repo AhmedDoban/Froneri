@@ -14,12 +14,7 @@ function Footer() {
           </div>
           <button>
             <span>All Vacanies</span>
-            <Image
-              src="/Career/Arrow_Right_Gray.svg"
-              width={15}
-              height={15}
-              alt="arrow-right"
-            />
+            <i className="fa-solid fa-arrow-right"></i>
           </button>
         </div>
         <div className="FooterBody">
@@ -27,8 +22,8 @@ function Footer() {
             <Image src="/Logo-white.svg" width={150} height={40} alt="logo" />
             <p>
               Joining our team means immersing yourself in a dynamic,
-              innovation-driven environment where you&apos;ll collaborate with some
-              of the brightest minds in the industry
+              innovation-driven environment where you&apos;ll collaborate with
+              some of the brightest minds in the industry
             </p>
           </div>
           <div className="box">

@@ -3,7 +3,6 @@ import OurPrograms from "./OurPrograms/OurPrograms";
 import Career from "./Career/Career";
 import Values from "./Values/Values";
 import Interview from "./Interview/Interview";
-import Footer from "@/Components/Footer/Footer";
 
 function Home() {
   return (
@@ -13,7 +12,6 @@ function Home() {
       <Career />
       <Values />
       <Interview />
-      <Footer />
     </div>
   );
 }

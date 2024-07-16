@@ -5,6 +5,7 @@ import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
 import "@/Style/Normalize.css";
 import "@/Style/Root.css";
 import "@/Style/Style.css";
+import Footer from "@/Components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Froneri",
@@ -25,6 +26,7 @@ export default function RootLayout({
         <AOSProvider>
           <Header />
           {children}
+          <Footer />
         </AOSProvider>
       </body>
     </html>
