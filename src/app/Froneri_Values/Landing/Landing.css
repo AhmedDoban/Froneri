@@ -1,0 +1,104 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Landing
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.ValuesLanding {
+  position: relative;
+  width: 100%;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  background-color: #fff;
+}
+.ValuesLanding::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../../../../public/LandingBackground.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.03;
+}
+.ValuesLanding .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Landing head
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.ValuesLanding .head {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 230px;
+}
+.ValuesLanding .head img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Landing landing-Content-container
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.ValuesLanding .landing-Content-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 50px;
+}
+.ValuesLanding .landing-Content-container .box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.ValuesLanding .landing-Content-container .box .Info-Head {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.ValuesLanding .landing-Content-container .box .Info-Head > h3 {
+  position: relative;
+  font-size: 33px;
+  font-weight: 700;
+  color: #004f5c;
+  padding: 0 0 12px 0;
+}
+.ValuesLanding .landing-Content-container .box > h1 {
+  position: relative;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: #004f5c;
+}
+.ValuesLanding .landing-Content-container .box > h2 {
+  position: relative;
+  font-size: 14px;
+  font-weight: 700;
+  color: #474747;
+  width: 60%;
+  line-height: 1.7;
+}
+.ValuesLanding .landing-Content-container .box > h3 {
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+.ValuesLanding .landing-Content-container .box > p {
+  position: relative;
+  font-size: 14px;
+  font-weight: 300;
+  color: #474747;
+  width: 90%;
+  line-height: 1.7;
+}

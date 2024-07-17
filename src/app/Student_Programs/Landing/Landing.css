@@ -1,0 +1,242 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# StudentLanding
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.StudentLanding {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+}
+.StudentLanding::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../../../../public/LandingBackground.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.03;
+  z-index: -1;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# StudentLanding left
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.StudentLanding .Headprogram {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  .StudentLanding .Headprogram {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+}
+.StudentLanding .Headprogram .left {
+  position: relative;
+  min-width: 500px;
+  height: 390px;
+  border-radius: 16px;
+  border: 1px solid #e8e8e8;
+}
+@media (max-width: 776px) {
+  .StudentLanding .Headprogram .left {
+    min-width: 100px;
+    height: 390px;
+    max-width: 100%;
+  }
+}
+.StudentLanding .Headprogram .left .image-Large {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.StudentLanding .Headprogram .left .image-Large img {
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid #e8e8e8;
+  height: 100%;
+  object-fit: cover;
+}
+.StudentLanding .Headprogram .left .image-Small {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 180px;
+  height: 130px;
+  border-radius: 10px;
+  border: 5px solid #f5f5f5;
+}
+.StudentLanding .Headprogram .left .image-Small img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# StudentLanding right
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.StudentLanding .Headprogram .right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 1200px) {
+  .StudentLanding .Headprogram .right {
+    width: 100%;
+    align-items: center;
+  }
+}
+.StudentLanding .Headprogram .right h1 {
+  position: relative;
+  font-size: 40px;
+  font-weight: 700;
+  color: #004f5c;
+  width: 80%;
+}
+@media (max-width: 1200px) {
+  .StudentLanding .Headprogram .right h1 {
+    width: 100%;
+  }
+}
+.StudentLanding .Headprogram .right p {
+  position: relative;
+  font-size: 14px;
+  font-weight: 300;
+  color: #474747;
+  line-height: 1.7;
+}
+.StudentLanding .Headprogram .right > .Apply {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #00aac8;
+  background-color: #00aac8;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.StudentLanding .Headprogram .right > .Apply img {
+  width: 15px;
+  height: 15px;
+}
+.StudentLanding .Headprogram .right > .Apply:hover {
+  background-color: var(--main-color-hover);
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# StudentLanding ContainerOverFlow
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.StudentLanding .ContainerOverFlow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  overflow: hidden;
+  margin-right: 0;
+  width: 87.5%;
+}
+@media (max-width: 1200px) {
+  .StudentLanding .ContainerOverFlow {
+    flex-direction: column;
+    margin-right: auto;
+  }
+}
+.StudentLanding .ContainerOverFlow .swiperContainer {
+  position: relative;
+  width: 100%;
+}
+.StudentLanding .ContainerOverFlow .Programtestimonials {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 230px;
+}
+.StudentLanding .ContainerOverFlow .Programtestimonials h3 {
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+  color: #006779;
+}
+.StudentLanding .ContainerOverFlow .SlideBox {
+  position: relative;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.StudentLanding .ContainerOverFlow .SlideBox > p {
+  position: relative;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #000;
+}
+.StudentLanding .ContainerOverFlow .SlideBox .userBox {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.StudentLanding .ContainerOverFlow .SlideBox .userBox .rate {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.StudentLanding .ContainerOverFlow .SlideBox .userBox .left {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.StudentLanding .ContainerOverFlow .SlideBox .userBox .left img {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.StudentLanding .ContainerOverFlow .SlideBox .userBox .left .info {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+.StudentLanding .ContainerOverFlow .SlideBox .userBox .left .info h3 {
+  position: relative;
+  font-size: 14px;
+  font-weight: 700;
+  color: #414141;
+}
+.StudentLanding .ContainerOverFlow .SlideBox .userBox .left .info p {
+  position: relative;
+  font-size: 12px;
+  font-weight: 300;
+  color: #6b6b6b;
+}
