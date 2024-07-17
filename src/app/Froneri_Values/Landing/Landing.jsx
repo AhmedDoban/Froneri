@@ -5,7 +5,7 @@ function Landing() {
   return (
     <div className="ValuesLanding">
       <div className="container">
-        <div className="head">
+        <div className="head" data-aos="fade-down">
           <Image
             src="/Values/Landing.jpeg"
             width={1000}
@@ -14,7 +14,7 @@ function Landing() {
           />
         </div>
         <div className="landing-Content-container">
-          <div className="box">
+          <div className="box" data-aos="zoom-in">
             <div className="Info-Head">
               <Image src="/logo.svg" width={150} height={40} alt="logo" />
               <h3>Values</h3>
@@ -30,7 +30,7 @@ function Landing() {
               genuinely friendly and informal style where everyone’s invited.
             </p>
           </div>
-          <div className="box">
+          <div className="box" data-aos="zoom-in">
             <h3>
               A FRONERI person is unique. They are an ‘all-rounder’,
               self-motivated, enthusiastic and think outside the box. They are
@@ -45,14 +45,14 @@ function Landing() {
               boundaries of what’s possible.
             </h3>
           </div>
-          <div className="box">
+          <div className="box" data-aos="zoom-in">
             <h1>Our Purpose</h1>
             <p>
               To become the world’s best ice cream company for all consumers,
               customers, and employees.
             </p>
           </div>
-          <div className="box">
+          <div className="box" data-aos="zoom-in">
             <h1>Our Goal</h1>
             <p>
               To grow our business through celebrated brands and own label

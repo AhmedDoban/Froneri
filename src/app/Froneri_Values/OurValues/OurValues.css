@@ -1,0 +1,133 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# OurValues
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.OurValues {
+  position: relative;
+  width: 100%;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  background-color: #fff;
+}
+.OurValues .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.OurValues .container .head-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.OurValues .container .head-info h3 {
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #004f5c;
+}
+.OurValues .container .head-info p {
+  position: relative;
+  font-size: 13px;
+  font-weight: 300;
+  color: #474747;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# OurValues container Values-container
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.OurValues .container .Values-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.OurValues .container .Values-container .box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  padding: 28px 0;
+  border-radius: 10px;
+  border: 1px solid #ededed;
+  background-color: #fcfcfc;
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.OurValues .container .Values-container .box .value-img-box {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 0 0 0 28px;
+}
+.OurValues .container .Values-container .box .value-img-box::before {
+  position: absolute;
+  content: "";
+  width: calc(100% - 78px);
+  right: -0px;
+  height: 1px;
+  background-color: #ededed;
+}
+.OurValues .container .Values-container .box .info {
+  position: relative;
+  padding: 0 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 10px;
+  width: 100%;
+}
+.OurValues .container .Values-container .box h2 {
+  position: relative;
+  font-size: 14px;
+  font-weight: 300;
+  color: #006779;
+}
+.OurValues .container .Values-container .box h3 {
+  position: relative;
+  font-size: 17px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.OurValues .container .Values-container .box p {
+  position: relative;
+  line-height: 1.7;
+  color: #000;
+  font-size: 14px;
+  font-weight: 300;
+}
+.OurValues .container .Values-container .box ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 5px;
+  width: 100%;
+}
+.OurValues .container .Values-container .box ul li {
+  position: relative;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #000;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+.OurValues .container .Values-container .box ul li::before {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 3px;
+  left: 5px;
+  top: 8px;
+  background-color: #000;
+  border-radius: 5px;
+}
