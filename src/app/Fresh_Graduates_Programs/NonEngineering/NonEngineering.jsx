@@ -24,7 +24,7 @@ function NonEngineering() {
             {testimonionBox
               .slice((currentPage - 1) * 2, currentPage * 2)
               .map((ele, index) => (
-                <div className="testimonionBox">
+                <div className="testimonionBox" key={index}>
                   <Image
                     src="/Graduates/Quote.svg"
                     width={50}

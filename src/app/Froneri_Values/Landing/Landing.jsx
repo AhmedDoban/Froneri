@@ -20,8 +20,8 @@ function Landing() {
               <h3>Values</h3>
             </div>
             <h2>
-              It's not only the results that define a business, but also the
-              people.
+              It&apos;s not only the results that define a business, but also
+              the people.
             </h2>
             <p>
               We believe in the power of a strong culture that has people at the
