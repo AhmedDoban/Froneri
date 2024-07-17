@@ -23,11 +23,11 @@ function InterviewsProcess() {
 
   return (
     <div className="InterviewsProcess">
-      <div className="container">
+      <div className="container" data-aos="fade-down">
         <Image src="/logo.svg" width={150} height={40} alt="logo" />
         <h1>Interviews process</h1>
       </div>
-      <div className="SwiperSection">
+      <div className="SwiperSection" data-aos="fade-down">
         <Swiper
           slidesPerView={3}
           spaceBetween={20}
@@ -187,7 +187,7 @@ function InterviewsProcess() {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="container">
+      <div className="container" data-aos="zoom-in">
         <div className="PaginationPanal">
           <ResponsivePaginationComponent
             current={currentPage}
@@ -195,6 +195,7 @@ function InterviewsProcess() {
             onPageChange={PaginationSlide}
             previousLabel={<i className="fa-solid fa-arrow-left"></i>}
             nextLabel={<i className="fa-solid fa-arrow-right"></i>}
+            maxWidth={100}
           />
         </div>
       </div>

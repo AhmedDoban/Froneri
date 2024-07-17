@@ -7,11 +7,11 @@ function Interview() {
       <div className="container">
         <div className="LeftSide">
           <div className="InterviewHead">
-            <h1>
+            <h1 data-aos="fade-down">
               How to get prepared for
               <br /> an interview
             </h1>
-            <div className="ApplicationBox">
+            <div className="ApplicationBox" data-aos="zoom-in">
               <Image
                 src="/Logo-white.svg"
                 width={85}
@@ -21,7 +21,7 @@ function Interview() {
               <p>Application Process</p>
             </div>
           </div>
-          <ul className="StepsToTake">
+          <ul className="StepsToTake" data-aos="fade-down">
             <li>
               Check “about us, FRONERI to know who we are, our history and what
               we do
@@ -41,7 +41,7 @@ function Interview() {
             <li>Check FRONERI behaviors</li>
             <li>Be yourself, be confident and arrive on time</li>
           </ul>
-          <div className="ShowMore">
+          <div className="ShowMore" data-aos="zoom-in">
             <button>
               <span>Learn more</span>
               <Image

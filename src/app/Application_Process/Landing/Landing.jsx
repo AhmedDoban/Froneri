@@ -5,7 +5,7 @@ function Landing() {
   return (
     <div className="Application_ProcessLanding">
       <div className="container">
-        <div className="left">
+        <div className="left" data-aos="fade-down">
           <Image src="/logo.svg" width={130} height={45} alt="logo" />
           <h1>Requirement Process</h1>
           <p>
@@ -14,7 +14,7 @@ function Landing() {
             expect.
           </p>
         </div>
-        <div className="right">
+        <div className="right" data-aos="zoom-in">
           <Image
             src="/Application/LandingImage.jpeg"
             width={500}
