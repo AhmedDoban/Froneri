@@ -8,6 +8,7 @@ function Vacanies() {
   const [currentPage, setCurrentPage] = useState(1);
   const [VacaniesBox, SetVacaniesBox] = useState(new Array(150).fill(""));
   const totalPages = VacaniesBox.length / 15;
+  const [FilterActive, SetFilterActive] = useState(false);
 
   return (
     <div className="Vacanies">
@@ -28,7 +29,7 @@ function Vacanies() {
               <input type="search" placeholder="Search for role.." />
             </div>
             <div className="filter-btn">
-              <button>
+              <button onClick={() => SetFilterActive(true)}>
                 <Image
                   src="/Career/Setting.svg"
                   width={30}
@@ -37,7 +38,6 @@ function Vacanies() {
                 />
                 <span>Filter</span>
               </button>
-              <div className="Filter-box-container"></div>
             </div>
           </div>
         </div>
@@ -113,6 +113,34 @@ function Vacanies() {
             nextLabel={<i className="fa-solid fa-arrow-right"></i>}
             maxWidth={100}
           />
+        </div>
+      </div>
+      <div
+        className={
+          FilterActive ? "Filter-box-container active" : "Filter-box-container"
+        }
+      >
+        <div className="head-filter">
+          <h1>Filter</h1>
+          <Image
+            src="/icons/exit.svg"
+            width={50}
+            height={50}
+            alt="exit"
+            onClick={() => SetFilterActive(false)}
+          />
+        </div>
+        <div className="body-Filter"></div>
+        <div className="Filter-Action">
+          <button>
+            <Image
+              src="/Career/Setting.svg"
+              width={30}
+              height={30}
+              alt="Search"
+            />
+            <span>Filter</span>
+          </button>
         </div>
       </div>
     </div>
