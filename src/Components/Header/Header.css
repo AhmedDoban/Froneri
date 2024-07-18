@@ -231,3 +231,68 @@
 .Header .container .bottom-content ul li a:hover::before {
   width: 100%;
 }
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Header GlobalPopUp
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Header .GlobalPopUp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--main-transition);
+  z-index: 9999;
+  padding: 10px;
+}
+.Header .GlobalPopUp .GlobalPopUpBox {
+  position: relative;
+  background-color: #ffffff;
+  padding: 50px;
+  width: 700px;
+  max-width: 100%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Header .GlobalPopUp .GlobalPopUpBox img {
+  position: relative;
+  cursor: pointer;
+}
+.Header .GlobalPopUp .GlobalPopUpBox h1 {
+  position: relative;
+  font-size: 35px;
+  font-weight: 600;
+  color: #004f5c;
+}
+.Header .GlobalPopUp .GlobalPopUpBox .Countries-box {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.Header .GlobalPopUp .GlobalPopUpBox .Countries-box .SingleCountry {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Header .GlobalPopUp .GlobalPopUpBox .Countries-box .SingleCountry img {
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 20px;
+  height: 20px;
+}
+.Header .GlobalPopUp .GlobalPopUpBox .Countries-box .SingleCountry span {
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  color: #00859c;
+  text-decoration: underline;
+  line-height: 2;
+}

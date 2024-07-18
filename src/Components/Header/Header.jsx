@@ -3,10 +3,14 @@ import Image from "next/image";
 import React, { useRef, useState } from "react";
 import NavLink from "./NavLink";
 import "./Header.css";
+import { Countries } from "@/app/Countries.js";
+import Flag from "react-world-flags";
 
 function Header() {
   const [NavOpen, SetNavOpen] = useState(false);
+  const [GlobalPopUp, SetGlobalPopUp] = useState(false);
   const NavRef = useRef();
+  const GlobalRef = useRef();
 
   if (typeof window !== "undefined") {
     window.addEventListener("click", (e) => {
@@ -15,10 +19,15 @@ function Header() {
           SetNavOpen(false);
         }
       }
-
+      if (GlobalRef.current !== null) {
+        if (e.target == GlobalRef.current) {
+          SetGlobalPopUp(false);
+        }
+      }
       return () => {};
     });
   }
+
   return (
     <div className="Header">
       <div className="container">
@@ -32,7 +41,7 @@ function Header() {
             <Image src="/logo.svg" width={140} height={40} alt="Logo" />
           </div>
           <div className="right">
-            <button>
+            <button onClick={() => SetGlobalPopUp(true)}>
               <Image
                 src="/icons/Global.svg"
                 width={30}
@@ -85,6 +94,28 @@ function Header() {
           </div>
         </div>
       </div>
+      {GlobalPopUp && (
+        <div className="GlobalPopUp" ref={GlobalRef}>
+          <div className="GlobalPopUpBox" data-aos="zoom-in">
+            <Image
+              src="/icons/exit.svg"
+              width={30}
+              height={30}
+              alt="Exit"
+              onClick={() => SetGlobalPopUp(false)}
+            />
+            <h1>Global job opportunities</h1>
+            <div className="Countries-box">
+              {Countries.map(({ name, code }) => (
+                <div className="SingleCountry" key={name}>
+                  <Flag code={code} height="25" width="25" />
+                  <span>{name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
