@@ -319,9 +319,9 @@
 .Vacanies .Filter-box-container {
   position: fixed;
   top: 0;
-  right: -350px;
+  right: -400px;
   height: 100vh;
-  width: 350px;
+  width: 400px;
   background-color: #ffffff;
   padding: 48px;
   border-radius: 16px 0px 0px 16px;
@@ -361,8 +361,89 @@
   position: relative;
   width: 100%;
   height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   overflow: hidden;
   overflow-y: scroll;
+}
+.Vacanies .Filter-box-container .body-Filter::-webkit-scrollbar-thumb {
+  box-shadow: none;
+}
+.Vacanies .Filter-box-container .body-Filter::-webkit-scrollbar {
+  width: 4px;
+}
+.Vacanies .Filter-box-container .body-Filter .box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.Vacanies .Filter-box-container .body-Filter h4 {
+  position: relative;
+  color: #6b6b6b;
+  font-size: 13px;
+  font-weight: 600;
+}
+.Vacanies .Filter-box-container .body-Filter .box ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Vacanies .Filter-box-container .body-Filter .box ul li label {
+  position: relative;
+  font-size: 13px;
+  font-weight: 300;
+  padding-left: 25px;
+  color: #6b6b6b;
+  cursor: pointer;
+}
+.Vacanies .Filter-box-container .body-Filter .box ul li label::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #e6f8fc;
+  border: 1px solid #8ae0ef;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: var(--main-transition);
+}
+.Vacanies .Filter-box-container .body-Filter .box ul li label::after {
+  position: absolute;
+  content: "\f00c";
+  font-family: "font Awesome 5 free";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 900;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-900deg) scale(0);
+  color: #e6f8fc;
+  width: 15px;
+  height: 15px;
+  background-color: #00bbdc;
+  border: 1px solid #b0eaf4;
+  border-radius: 50%;
+  font-size: 100px;
+  transition: var(--main-transition);
+}
+.Vacanies
+  .Filter-box-container
+  .body-Filter
+  .box
+  ul
+  li
+  input:checked
+  + label::after {
+  font-size: 8px;
+  transform: translateY(-50%);
 }
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
   # Vacanies container FilterPart Action
