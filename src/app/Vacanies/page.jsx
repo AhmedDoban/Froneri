@@ -4,6 +4,7 @@ import "./Vacanies.css";
 import { useState } from "react";
 import ResponsivePagination from "react-responsive-pagination";
 import { Countries } from "../Countries.js";
+import VacancyBox from "./VacancyBox/VacancyBox";
 
 function Vacanies() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -62,46 +63,7 @@ function Vacanies() {
         <div className="Vacanies_Container">
           {VacaniesBox.slice((currentPage - 1) * 15, currentPage * 15).map(
             (ele, index) => (
-              <div className="box" data-aos="zoom-in" key={index}>
-                <div className="over-layVacanies">
-                  <span>Finance and Accounting</span>
-                </div>
-                <div className="location">
-                  <Image
-                    src="/Career/Location.svg"
-                    width={20}
-                    height={20}
-                    alt="location"
-                  />
-                  <span>FRONERI Sales Office, New Cairo</span>
-                </div>
-                <h3>Key Accounts Development Supervisor</h3>
-                <button className="JobBtn">
-                  <Image
-                    src="/Career/Job.svg"
-                    width={20}
-                    height={20}
-                    alt="Job"
-                  />
-                  <span>Full time</span>
-                </button>
-                <p>
-                  Passionate about hitting targets? Here’s your chance to shine!
-                  FRONERI Egypt is looking for Key Accounts Development
-                  Supervisor to join the Sales Team who will be delivering
-                  accelerated sales, market share targets through creating,
-                  selling and executing the category commercial elements...
-                </p>
-                <button className="Apply">
-                  <span> Apply Now</span>
-                  <Image
-                    src="/icons/Arrow-right.svg"
-                    width={25}
-                    height={25}
-                    alt="arrow-right"
-                  />
-                </button>
-              </div>
+              <VacancyBox key={index} />
             )
           )}
         </div>
