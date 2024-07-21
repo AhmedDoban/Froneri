@@ -1,0 +1,218 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# JobDetails
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.JobDetails {
+  position: relative;
+  width: 100%;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  background-color: #f9f9f9;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# JobDetails main-box
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.JobDetails .container .main-box {
+  position: relative;
+  background-color: #fff;
+  border-radius: 15px;
+}
+.JobDetails .container .box:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.JobDetails .container .box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+  width: 100%;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# JobDetails main-box firstBox
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.JobDetails .container .box .JobHead {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+}
+.JobDetails .container .box .JobHead img {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.JobDetails .container .box .JobHead .info {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.JobDetails .container .box .JobHead .info > h3 {
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  color: #004f5c;
+}
+.JobDetails .container .box .JobHead .info > span {
+  position: relative;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--main-text-color);
+}
+.JobDetails .container .box button {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #00aac8;
+  background-color: #00aac8;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.JobDetails .container .box button img {
+  width: 15px;
+  height: 15px;
+}
+.JobDetails .container .box button:hover {
+  background-color: var(--main-color-hover);
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# JobDetails main-box SecondBox
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.JobDetails .container .box .JobDescrip {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  padding-right: 100px;
+  transition: var(--main-transition);
+}
+@media (max-width: 992px) {
+  .JobDetails .container .box .JobDescrip {
+    gap: 20px;
+    padding: 0;
+    justify-content: flex-start;
+  }
+}
+.JobDetails .container .box .JobDescrip div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.JobDetails .container .box .JobDescrip div span {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--main-text-color);
+}
+.JobDetails .container .box .JobDescrip div img {
+  position: relative;
+  width: auto;
+  height: 20px;
+}
+.JobDetails .container .box > span {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--main-text-color);
+}
+.JobDetails .container .box > h2 {
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  color: #004f5c;
+  margin-bottom: 20px;
+}
+.JobDetails .container .box .skills {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.JobDetails .container .box .skills span {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--main-text-color);
+}
+.JobDetails .container .box .skills ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: disc;
+  padding-left: 20px;
+}
+.JobDetails .container .box .skills ul li {
+  position: relative;
+  width: 50%;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--main-text-color);
+  transition: var(--main-transition);
+}
+@media (max-width: 992px) {
+  .JobDetails .container .box .skills ul li {
+    width: 100%;
+  }
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# JobDetails main-box ThirdBox
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.JobDetails .container .box .jobDescription {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.JobDetails .container .box .jobDescription h2 {
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  color: #004f5c;
+}
+.JobDetails .container .box .jobDescription p {
+  position: relative;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--main-text-color);
+  line-height: 1.7;
+}
+.JobDetails .container .box h4 {
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  color: #004f5c;
+  margin: 15px 0;
+}
+.JobDetails .container .box ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: disc;
+  padding-left: 20px;
+}
+.JobDetails .container .box ul li {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--main-text-color);
+  transition: var(--main-transition);
+}

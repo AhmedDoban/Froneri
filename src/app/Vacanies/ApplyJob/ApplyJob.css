@@ -1,0 +1,209 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Header ApplyJob
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.ApplyJobBoxPopUp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--main-transition);
+  z-index: 9999;
+  padding: 10px;
+}
+.ApplyJobBoxPopUp .Form-content {
+  position: relative;
+  background-color: #ffffff;
+  padding: 50px;
+  width: 700px;
+  max-width: 100%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ApplyJobBoxPopUp .Form-content img {
+  position: relative;
+  cursor: pointer;
+}
+.ApplyJobBoxPopUp .Form-content h1 {
+  position: relative;
+  font-size: 35px;
+  font-weight: 700;
+  color: #004f5c;
+}
+.ApplyJobBoxPopUp .Form-box {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  overflow-y: auto;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ApplyJobBoxPopUp .Form-box::-webkit-scrollbar-thumb {
+  box-shadow: none;
+}
+.ApplyJobBoxPopUp .Form-box::-webkit-scrollbar {
+  width: 4px;
+}
+.ApplyJobBoxPopUp .Form-box .flex-box {
+  position: relative;
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 992px) {
+  .ApplyJobBoxPopUp .Form-box .flex-box {
+    flex-direction: column;
+  }
+}
+.ApplyJobBoxPopUp .Form-box .flex-box .Major {
+  width: 100%;
+}
+.ApplyJobBoxPopUp .Form-box h3 {
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  color: #004f5c;
+}
+.ApplyJobBoxPopUp .Form-box .flex-box > input,
+.ApplyJobBoxPopUp .Form-box .flex-box .Major input,
+.ApplyJobBoxPopUp .Form-box .flex-box > textarea {
+  position: relative;
+  width: 100%;
+  padding: 10px 10px 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #b5b5b5;
+  font-size: 13px;
+  font-weight: 300;
+  outline: 0;
+}
+.ApplyJobBoxPopUp .Form-box .flex-box > textarea {
+  height: 200px;
+  resize: none;
+}
+.ApplyJobBoxPopUp .Form-box .flex-box input::placeholder {
+  color: #b5b5b5 !important;
+}
+.ApplyJobBoxPopUp .Form-box .drop-down-box {
+  position: relative;
+  width: 100% !important;
+}
+.ApplyJobBoxPopUp .Form-box .drop-down-box .DropDownSelectBox {
+  position: relative;
+  width: 100% !important;
+  border-radius: 8px !important;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 8px 10px 8px 20px !important;
+}
+.ApplyJobBoxPopUp .Form-box .flex-box .GenderType label {
+  position: relative;
+  font-size: 13px;
+  font-weight: 300;
+  padding-left: 25px;
+  color: #6b6b6b;
+  cursor: pointer;
+}
+.ApplyJobBoxPopUp .Form-box .flex-box .GenderType label::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #e6f8fc;
+  border: 1px solid #8ae0ef;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: var(--main-transition);
+}
+.ApplyJobBoxPopUp .Form-box .flex-box .GenderType label::after {
+  position: absolute;
+  content: "\f00c";
+  font-family: "font Awesome 5 free";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 900;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-900deg) scale(0);
+  color: #e6f8fc;
+  width: 15px;
+  height: 15px;
+  background-color: #00bbdc;
+  border: 1px solid #b0eaf4;
+  border-radius: 50%;
+  font-size: 100px;
+  transition: var(--main-transition);
+}
+.ApplyJobBoxPopUp .Form-box .flex-box .GenderType input:checked + label::after {
+  font-size: 8px;
+  transform: translateY(-50%);
+}
+.ApplyJobBoxPopUp .Form-box .input-File,
+.ApplyJobBoxPopUp .Form-box button {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.ApplyJobBoxPopUp .Form-box .input-File label {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #e6f8fc;
+  border: 1px solid #00859c;
+  color: #004f5c;
+  transition: var(--main-transition);
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.ApplyJobBoxPopUp .Form-box .input-File label svg {
+  transition: var(--main-transition);
+  width: 12px;
+}
+.ApplyJobBoxPopUp .Form-box .input-File label svg path {
+  transition: var(--main-transition);
+  fill: #004f5c !important;
+}
+.ApplyJobBoxPopUp .Form-box .input-File label:hover {
+  background-color: #004f5c;
+  border: 1px solid #00859c;
+  color: #e6f8fc;
+}
+.ApplyJobBoxPopUp .Form-box .input-File label:hover svg path {
+  fill: #e6f8fc !important;
+}
+.ApplyJobBoxPopUp .Form-box button {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  gap: 10px;
+  border: 1px solid #00aac8;
+  background-color: #00aac8;
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: var(--main-transition);
+}
+.ApplyJobBoxPopUp .Form-box button:hover {
+  background-color: var(--main-color-hover);
+}
