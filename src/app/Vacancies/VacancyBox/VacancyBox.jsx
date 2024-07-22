@@ -11,7 +11,7 @@ function VacancyBox() {
   return (
     <>
       <div className="VacancyBox" data-aos="zoom-in">
-        <div className="over-layVacanies">
+        <div className="over-layVacancies">
           <span>Finance and Accounting</span>
         </div>
         <div className="location">
@@ -23,7 +23,7 @@ function VacancyBox() {
           />
           <span>FRONERI Sales Office, New Cairo</span>
         </div>
-        <Link href="/Vacanies/1" className="BoxTitle">
+        <Link href="/Vacancies/1" className="BoxTitle">
           <h3>Key Accounts Development Supervisor</h3>
         </Link>
         <button className="JobBtn">

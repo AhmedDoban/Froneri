@@ -1,7 +1,7 @@
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
-# Vacanies
+# Vacancies
 ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
-.Vacanies {
+.Vacancies {
   position: relative;
   width: 100%;
   padding-top: var(--main-padding-top);
@@ -9,18 +9,18 @@
   background-color: #f9f9f9;
 }
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
-  # Vacanies container
+  # Vacancies container
   ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
-.Vacanies .container {
+.Vacancies .container {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
-  # Vacanies container info
+  # Vacancies container info
   ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
-.Vacanies .container .info {
+.Vacancies .container .info {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -28,40 +28,40 @@
   gap: 10px;
 }
 @media (max-width: 992px) {
-  .Vacanies .container .info {
+  .Vacancies .container .info {
     flex-direction: column;
   }
 }
-.Vacanies .container .info .leftInfo {
+.Vacancies .container .info .leftInfo {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.Vacanies .container .info .leftInfo h3 {
+.Vacancies .container .info .leftInfo h3 {
   position: relative;
   font-size: 45px;
   font-weight: 600;
   color: #00bbdc;
 }
-.Vacanies .container .info .leftInfo p {
+.Vacancies .container .info .leftInfo p {
   position: relative;
   font-size: 16px;
   font-weight: 400;
   color: #474747;
 }
-.Vacanies .container .info .search {
+.Vacancies .container .info .search {
   position: relative;
   display: flex;
   align-items: center;
   gap: 20px;
 }
 @media (max-width: 992px) {
-  .Vacanies .container .info .search {
+  .Vacancies .container .info .search {
     width: 100%;
   }
 }
-.Vacanies .container .info .search .input-box {
+.Vacancies .container .info .search .input-box {
   position: relative;
   display: flex;
   align-items: center;
@@ -73,12 +73,12 @@
   max-width: 100%;
 }
 @media (max-width: 992px) {
-  .Vacanies .container .info .search .input-box {
+  .Vacancies .container .info .search .input-box {
     min-width: 200px;
     width: 100%;
   }
 }
-.Vacanies .container .info .search .input-box input {
+.Vacancies .container .info .search .input-box input {
   position: relative;
   background-color: transparent;
   width: 100%;
@@ -89,15 +89,15 @@
   color: #000;
   transition: var(--main-transition);
 }
-.Vacanies .container .info .search .input-box input::placeholder {
+.Vacancies .container .info .search .input-box input::placeholder {
   color: #848484;
 }
-.Vacanies .container .info .search .input-box img {
+.Vacancies .container .info .search .input-box img {
   position: relative;
   width: auto;
   height: 15px;
 }
-.Vacanies .container .info .search .filter-btn button {
+.Vacancies .container .info .search .filter-btn button {
   position: relative;
   display: flex;
   align-items: center;
@@ -112,18 +112,18 @@
   font-weight: 400;
   color: #e6f8fc;
 }
-.Vacanies .container .info .search .filter-btn button:hover {
+.Vacancies .container .info .search .filter-btn button:hover {
   background-color: var(--main-color);
 }
-.Vacanies .container .info .search .filter-btn button img {
+.Vacancies .container .info .search .filter-btn button img {
   position: relative;
   width: 18px;
   height: 18px;
 }
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
-# Vacanies container Navigation-Info
+# Vacancies container Navigation-Info
 ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
-.Vacanies .container .Navigation-Info {
+.Vacancies .container .Navigation-Info {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -131,25 +131,25 @@
   gap: 10px;
 }
 @media (max-width: 776px) {
-  .Vacanies .container .Navigation-Info {
+  .Vacancies .container .Navigation-Info {
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
   }
 }
-.Vacanies .container .Navigation-Info .left {
+.Vacancies .container .Navigation-Info .left {
   position: relative;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.Vacanies .container .Navigation-Info .left p {
+.Vacancies .container .Navigation-Info .left p {
   position: relative;
   color: #004f5c;
   font-size: 16px;
   font-weight: 400;
 }
-.Vacanies .container .Navigation-Info .left span {
+.Vacancies .container .Navigation-Info .left span {
   position: relative;
   color: #6b6b6b;
   font-size: 16px;
@@ -160,15 +160,15 @@
   border-radius: 10px;
 }
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
-# Vacanies container PaginationPanal
+# Vacancies container PaginationPanal
 ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
 @media (max-width: 776px) {
-  .Vacanies .container .PaginationPanal {
+  .Vacancies .container .PaginationPanal {
     position: relative;
     width: 100%;
   }
 }
-.Vacanies .container .pagination {
+.Vacancies .container .pagination {
   justify-content: center;
   display: flex;
   padding-left: 0;
@@ -176,7 +176,7 @@
   margin: 0;
 }
 
-.Vacanies .container .page-item .page-link {
+.Vacancies .container .page-item .page-link {
   position: relative;
   display: flex;
   justify-content: center;
@@ -195,28 +195,28 @@
   transition: var(--main-transition);
 }
 
-.Vacanies .container .page-item a.page-link:hover {
+.Vacancies .container .page-item a.page-link:hover {
   color: #ffffff;
   background-color: #00bbdc;
   border: 1px solid #54d1e8;
 }
 
-.Vacanies .container .page-item.active .page-link {
+.Vacancies .container .page-item.active .page-link {
   color: #ffffff;
   background-color: #00bbdc;
   border: 1px solid #54d1e8;
 }
 
-.Vacanies .container .page-item.disabled .page-link {
+.Vacancies .container .page-item.disabled .page-link {
   color: #00bbdc;
   background-color: #b0eaf4;
   border: 1px solid #8ae0ef;
 }
 
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
-  # Vacanies container box
+  # Vacancies container box
   ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
-.Vacanies .container .Vacanies_Container {
+.Vacancies .container .Vacancies_Container {
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -224,9 +224,9 @@
   row-gap: 25px;
 }
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
-  # Vacanies container FilterPart
+  # Vacancies container FilterPart
 ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
-.Vacanies .Filter-box-container {
+.Vacancies .Filter-box-container {
   position: fixed;
   top: 0;
   right: -400px;
@@ -241,10 +241,10 @@
   flex-direction: column;
   gap: 20px;
 }
-.Vacanies .Filter-box-container.active {
+.Vacancies .Filter-box-container.active {
   right: 0;
 }
-.Vacanies .Filter-box-container .head-filter {
+.Vacancies .Filter-box-container .head-filter {
   position: relative;
   height: 30px;
   display: flex;
@@ -252,22 +252,22 @@
   align-items: center;
   gap: 10px;
 }
-.Vacanies .Filter-box-container .head-filter h1 {
+.Vacancies .Filter-box-container .head-filter h1 {
   position: relative;
   font-size: 20px;
   font-weight: 600;
   color: #006779;
 }
-.Vacanies .Filter-box-container .head-filter img {
+.Vacancies .Filter-box-container .head-filter img {
   position: relative;
   width: 25px;
   height: 25px;
   cursor: pointer;
 }
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
-  # Vacanies container FilterPart body
+  # Vacancies container FilterPart body
 ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
-.Vacanies .Filter-box-container .body-Filter {
+.Vacancies .Filter-box-container .body-Filter {
   position: relative;
   width: 100%;
   height: calc(100vh - 70px);
@@ -277,31 +277,31 @@
   overflow: hidden;
   overflow-y: scroll;
 }
-.Vacanies .Filter-box-container .body-Filter::-webkit-scrollbar-thumb {
+.Vacancies .Filter-box-container .body-Filter::-webkit-scrollbar-thumb {
   box-shadow: none;
 }
-.Vacanies .Filter-box-container .body-Filter::-webkit-scrollbar {
+.Vacancies .Filter-box-container .body-Filter::-webkit-scrollbar {
   width: 4px;
 }
-.Vacanies .Filter-box-container .body-Filter .box {
+.Vacancies .Filter-box-container .body-Filter .box {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 13px;
 }
-.Vacanies .Filter-box-container .body-Filter h4 {
+.Vacancies .Filter-box-container .body-Filter h4 {
   position: relative;
   color: #6b6b6b;
   font-size: 13px;
   font-weight: 600;
 }
-.Vacanies .Filter-box-container .body-Filter .box ul {
+.Vacancies .Filter-box-container .body-Filter .box ul {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.Vacanies .Filter-box-container .body-Filter .box ul li label {
+.Vacancies .Filter-box-container .body-Filter .box ul li label {
   position: relative;
   font-size: 13px;
   font-weight: 300;
@@ -309,7 +309,7 @@
   color: #6b6b6b;
   cursor: pointer;
 }
-.Vacanies .Filter-box-container .body-Filter .box ul li label::before {
+.Vacancies .Filter-box-container .body-Filter .box ul li label::before {
   position: absolute;
   content: "";
   left: 0;
@@ -323,7 +323,7 @@
   transform: translateY(-50%);
   transition: var(--main-transition);
 }
-.Vacanies .Filter-box-container .body-Filter .box ul li label::after {
+.Vacancies .Filter-box-container .body-Filter .box ul li label::after {
   position: absolute;
   content: "\f00c";
   font-family: "font Awesome 5 free";
@@ -344,7 +344,7 @@
   font-size: 100px;
   transition: var(--main-transition);
 }
-.Vacanies
+.Vacancies
   .Filter-box-container
   .body-Filter
   .box
@@ -356,13 +356,13 @@
   transform: translateY(-50%);
 }
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
-  # Vacanies container FilterPart Action
+  # Vacancies container FilterPart Action
 ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
-.Vacanies .Filter-box-container .Filter-Action {
+.Vacancies .Filter-box-container .Filter-Action {
   position: relative;
   height: 40px;
 }
-.Vacanies .Filter-box-container .Filter-Action button {
+.Vacancies .Filter-box-container .Filter-Action button {
   position: relative;
   display: flex;
   align-items: center;
@@ -380,10 +380,10 @@
   width: 100%;
   height: 100%;
 }
-.Vacanies .Filter-box-container .Filter-Action button:hover {
+.Vacancies .Filter-box-container .Filter-Action button:hover {
   background-color: var(--main-color);
 }
-.Vacanies .Filter-box-container .Filter-Action button img {
+.Vacancies .Filter-box-container .Filter-Action button img {
   position: relative;
   width: 18px;
   height: 18px;

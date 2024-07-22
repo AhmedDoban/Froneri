@@ -79,7 +79,7 @@ function Career() {
         </div>
         <div className="ShowMore">
           <button>
-            <span>All Vacanies</span>
+            <span>All Vacancies</span>
             <i className="fa-solid fa-arrow-right"></i>
           </button>
         </div>

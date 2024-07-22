@@ -1,29 +1,29 @@
 "use client";
 import Image from "next/image";
-import "./Vacanies.css";
+import "./Vacancies.css";
 import { useState } from "react";
 import ResponsivePagination from "react-responsive-pagination";
 import { Countries } from "../Countries.js";
-import VacancyBox from "./VacancyBox/VacancyBox";
+import VacancyBox from "./VacancyBox/VacancyBox.jsx";
 
-function Vacanies() {
+function Vacancies() {
   const [currentPage, setCurrentPage] = useState(1);
-  const [VacaniesBox, SetVacaniesBox] = useState(new Array(150).fill(""));
-  const totalPages = VacaniesBox.length / 15;
+  const [VacanciesBox, SetVacanciesBox] = useState(new Array(150).fill(""));
+  const totalPages = VacanciesBox.length / 15;
   const [FilterActive, SetFilterActive] = useState(false);
 
   return (
-    <div className="Vacanies">
+    <div className="Vacancies">
       <div className="container">
         <div className="info" data-aos="fade-down">
           <div className="leftInfo">
-            <h3>Find your Vacanies</h3>
+            <h3>Find your Vacancies</h3>
             <p>FRONERI Job opportunities for professionals</p>
           </div>
           <div className="search">
             <div className="input-box">
               <Image
-                src="/Vacanies/Search.svg"
+                src="/Vacancies/Search.svg"
                 width={30}
                 height={30}
                 alt="Search"
@@ -47,7 +47,7 @@ function Vacanies() {
           <div className="left">
             <p>Showing</p>
             <span>{currentPage * 15}</span>
-            <p>From {VacaniesBox.length} jobs</p>
+            <p>From {VacanciesBox.length} jobs</p>
           </div>
           <div className="PaginationPanal">
             <ResponsivePagination
@@ -60,8 +60,8 @@ function Vacanies() {
             />
           </div>
         </div>
-        <div className="Vacanies_Container">
-          {VacaniesBox.slice((currentPage - 1) * 15, currentPage * 15).map(
+        <div className="Vacancies_Container">
+          {VacanciesBox.slice((currentPage - 1) * 15, currentPage * 15).map(
             (ele, index) => (
               <VacancyBox key={index} />
             )
@@ -334,4 +334,4 @@ function Vacanies() {
     </div>
   );
 }
-export default Vacanies;
+export default Vacancies;

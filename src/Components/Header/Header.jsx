@@ -70,7 +70,7 @@ function Header() {
               <NavLink href="/">Home</NavLink>
             </li>
             <li>
-              <NavLink href="/Vacanies">Vacanies</NavLink>
+              <NavLink href="/Vacancies">Vacancies</NavLink>
             </li>
             <li>
               <NavLink href="/Fresh_Graduates_Programs">

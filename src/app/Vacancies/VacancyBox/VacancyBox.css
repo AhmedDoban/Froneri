@@ -1,4 +1,4 @@
-.Vacanies .container .Vacanies_Container .VacancyBox {
+.Vacancies .container .Vacancies_Container .VacancyBox {
   position: relative;
   width: 100%;
   padding: 25px;
@@ -9,7 +9,7 @@
   flex-direction: column;
   gap: 15px;
 }
-.Vacanies .container .Vacanies_Container .VacancyBox .over-layVacanies {
+.Vacancies .container .Vacancies_Container .VacancyBox .over-layVacancies {
   position: absolute;
   top: -15px;
   height: fit-content;
@@ -21,26 +21,26 @@
   font-weight: 400;
   color: #006779;
 }
-.Vacanies .container .Vacanies_Container .VacancyBox .location {
+.Vacancies .container .Vacancies_Container .VacancyBox .location {
   position: relative;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.Vacanies .container .Vacanies_Container .VacancyBox .location span {
+.Vacancies .container .Vacancies_Container .VacancyBox .location span {
   position: relative;
   color: var(--main-text-color);
   font-size: 14px;
   font-weight: 300;
 }
-.Vacanies .container .Vacanies_Container .VacancyBox > .BoxTitle h3 {
+.Vacancies .container .Vacancies_Container .VacancyBox > .BoxTitle h3 {
   position: relative;
   font-size: 20px;
   font-weight: 600;
   color: #004f5c;
   line-height: 1.4;
 }
-.Vacanies .container .Vacanies_Container .VacancyBox .JobBtn {
+.Vacancies .container .Vacancies_Container .VacancyBox .JobBtn {
   position: relative;
   font-size: 14px;
   font-weight: 400;
@@ -57,14 +57,14 @@
   cursor: pointer;
   transition: var(--main-transition);
 }
-.Vacanies .container .Vacanies_Container .VacancyBox > p {
+.Vacancies .container .Vacancies_Container .VacancyBox > p {
   position: relative;
   font-size: 13px;
   font-weight: 300;
   line-height: 1.7;
   color: var(--main-text-color);
 }
-.Vacanies .container .Vacanies_Container .VacancyBox .Apply {
+.Vacancies .container .Vacancies_Container .VacancyBox .Apply {
   position: relative;
   font-size: 16px;
   font-weight: 400;
@@ -81,10 +81,10 @@
   cursor: pointer;
   transition: var(--main-transition);
 }
-.Vacanies .container .Vacanies_Container .VacancyBox .Apply img {
+.Vacancies .container .Vacancies_Container .VacancyBox .Apply img {
   width: 15px;
   height: 15px;
 }
-.Vacanies .container .Vacanies_Container .VacancyBox .Apply:hover {
+.Vacancies .container .Vacancies_Container .VacancyBox .Apply:hover {
   background-color: var(--main-color-hover);
 }

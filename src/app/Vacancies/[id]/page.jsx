@@ -15,7 +15,7 @@ function Page() {
             <div className="box">
               <div className="JobHead">
                 <Image
-                  src="/Vacanies/JobDesc.png"
+                  src="/Vacancies/JobDesc.png"
                   width={70}
                   height={70}
                   alt="Job"

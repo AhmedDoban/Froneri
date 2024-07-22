@@ -10,11 +10,11 @@ export default function Landing() {
           <h1>Chart your way to success with Froneri</h1>
           <span>
             Joining our team means immersing yourself in a dynamic,
-            innovation-driven environment where you&apos;ll collaborate with some of
-            the brightest minds in the industry
+            innovation-driven environment where you&apos;ll collaborate with
+            some of the brightest minds in the industry
           </span>
           <button>
-            <span>All Vacanies</span>
+            <span>All Vacancies</span>
             <Image
               src="/icons/Arrow-right.svg"
               width={30}
@@ -26,7 +26,7 @@ export default function Landing() {
         <div className="img-content">
           <Image
             width={1200}
-            height={400}
+            height={1200}
             alt="HomeLanding"
             src="/HomeLanding.png"
           />

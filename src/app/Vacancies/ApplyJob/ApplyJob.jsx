@@ -139,7 +139,7 @@ function ApplyJob({ SetApplyJobBox }) {
                   width: "100%",
                 }}
                 className="DropDownSelectBox"
-                placeholder="How did you know abou us"
+                placeholder="How did you know about us"
                 dropdownPosition="auto"
               />
             </div>

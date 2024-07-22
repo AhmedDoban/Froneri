@@ -13,7 +13,7 @@ function Footer() {
             <h1>We can do amazing things together</h1>
           </div>
           <button>
-            <span>All Vacanies</span>
+            <span>All Vacancies</span>
             <i className="fa-solid fa-arrow-right"></i>
           </button>
         </div>
@@ -33,7 +33,7 @@ function Footer() {
                 <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="/Vacanies">Vacanies</Link>
+                <Link href="/Vacancies">Vacancies</Link>
               </li>
               <li>
                 <Link href="/Froneri_Values">Froneri Values</Link>
