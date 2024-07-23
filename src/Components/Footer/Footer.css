@@ -20,6 +20,11 @@
   background-position: bottom bottom;
   opacity: 0.03;
 }
+@media (max-width: 442px) {
+  .Footer {
+    overflow: hidden;
+  }
+}
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 # Footer container
 ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
@@ -83,6 +88,11 @@
   .Footer .container .FooterHead .info h1 {
     font-size: 40px;
     width: 100%;
+  }
+}
+@media (max-width: 442px) {
+  .Footer .container .FooterHead .info h1 {
+    font-size: 30px;
   }
 }
 .Footer .container .FooterHead button {
@@ -226,6 +236,11 @@
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+}
+@media (max-width: 442px) {
+  .Footer .container .CopyRight {
+    flex-direction: column;
+  }
 }
 .Footer .container .CopyRight p {
   position: relative;

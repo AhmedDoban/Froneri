@@ -56,6 +56,11 @@
   align-items: center;
   gap: 20px;
 }
+@media (max-width: 442px) {
+  .Vacancies .container .info .search {
+    flex-direction: column;
+  }
+}
 @media (max-width: 992px) {
   .Vacancies .container .info .search {
     width: 100%;
@@ -111,6 +116,12 @@
   font-size: 16px;
   font-weight: 400;
   color: #e6f8fc;
+}
+@media (max-width: 442px) {
+  .Vacancies .container .info .search .filter-btn,
+  .Vacancies .container .info .search .filter-btn button {
+    width: 100%;
+  }
 }
 .Vacancies .container .info .search .filter-btn button:hover {
   background-color: var(--main-color);
@@ -240,6 +251,12 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+@media (max-width: 442px) {
+  .Vacancies .Filter-box-container {
+    padding: 20px;
+    width: 300px;
+  }
 }
 .Vacancies .Filter-box-container.active {
   right: 0;

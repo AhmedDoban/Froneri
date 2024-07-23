@@ -36,6 +36,12 @@
   font-weight: 700;
   color: #004f5c;
 }
+@media (max-width: 442px) {
+  .ApplyJobBoxPopUp .Form-content h1 {
+    font-size: 18px;
+    width: 100%;
+  }
+}
 .ApplyJobBoxPopUp .Form-box {
   position: relative;
   height: 300px;

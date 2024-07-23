@@ -105,6 +105,13 @@
   font-weight: 400;
   transition: var(--main-transition);
 }
+@media (max-width: 442px) {
+  .Header .container .Top-content .right button {
+    gap: 10px;
+    padding: 4px;
+    gap: 0px;
+  }
+}
 .Header .container .Top-content .right button:hover {
   background-color: #004f5c;
   border: 1px solid #00859c;
@@ -269,11 +276,21 @@
   font-weight: 600;
   color: #004f5c;
 }
+@media (max-width: 442px) {
+  .Header .GlobalPopUp .GlobalPopUpBox h1 {
+    font-size: 20px;
+  }
+}
 .Header .GlobalPopUp .GlobalPopUpBox .Countries-box {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+@media (max-width: 442px) {
+  .Header .GlobalPopUp .GlobalPopUpBox .Countries-box {
+    gap: 10px;
+  }
 }
 .Header .GlobalPopUp .GlobalPopUpBox .Countries-box .SingleCountry {
   position: relative;

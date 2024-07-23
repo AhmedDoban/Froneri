@@ -28,7 +28,7 @@ export default function Landing() {
             width={1200}
             height={1200}
             alt="HomeLanding"
-            src="/HomeLanding.png"
+            src="/HomeLanding.jpg"
           />
         </div>
       </div>

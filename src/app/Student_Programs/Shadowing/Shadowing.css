@@ -87,6 +87,11 @@
   border-radius: 10px;
   border: 5px solid #f5f5f5;
 }
+@media (max-width: 442px) {
+  .GraduatesShadowing .Headprogram .left .image-Small {
+    right: -20px;
+  }
+}
 .GraduatesShadowing .Headprogram .left .image-Small img {
   position: relative;
   width: 100%;

@@ -53,6 +53,12 @@
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 50px;
 }
+@media (max-width: 442px) {
+  .ValuesLanding .landing-Content-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+  }
+}
 .ValuesLanding .landing-Content-container .box {
   position: relative;
   display: flex;
@@ -93,6 +99,7 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1.7;
+  max-width: 100%;
 }
 .ValuesLanding .landing-Content-container .box > p {
   position: relative;

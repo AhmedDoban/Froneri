@@ -66,6 +66,9 @@ function Landing() {
             centeredSlides={true}
             loop={true}
             breakpoints={{
+              150: {
+                slidesPerView: 1,
+              },
               350: {
                 slidesPerView: 1,
               },

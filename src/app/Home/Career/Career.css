@@ -74,6 +74,11 @@
     width: 100%;
   }
 }
+@media (max-width: 442px) {
+  .Career .container .info .search {
+    flex-direction: column;
+  }
+}
 .Career .container .info .search .input-box {
   position: relative;
   display: flex;
@@ -122,6 +127,12 @@
   font-size: 16px;
   font-weight: 400;
   color: #e6f8fc;
+}
+@media (max-width: 442px) {
+  .Career .container .info .search .filter-btn,
+  .Career .container .info .search .filter-btn button {
+    width: 100%;
+  }
 }
 .Career .container .info .search .filter-btn button:hover {
   background-color: var(--main-color-hover);

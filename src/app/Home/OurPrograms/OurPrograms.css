@@ -36,6 +36,11 @@
   width: 100%;
   height: 100%;
 }
+@media (max-width: 442px) {
+  .OurPrograms .OurPrograms_Cicle {
+    overflow: hidden;
+  }
+}
 .OurPrograms .OurPrograms_Cicle::before {
   position: absolute;
   content: "";
