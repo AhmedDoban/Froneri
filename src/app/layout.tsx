@@ -6,6 +6,7 @@ import "@/Style/Normalize.css";
 import "@/Style/Root.css";
 import "@/Style/Style.css";
 import Footer from "@/Components/Footer/Footer";
+import StoreProvider from "@/Toolkit/StoreProvider";
 
 export const metadata: Metadata = {
   title: "Froneri",
@@ -23,11 +24,13 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.svg" />
       </head>
       <body>
-        <AOSProvider>
-          <Header />
-          {children}
-          <Footer />
-        </AOSProvider>
+        <StoreProvider>
+          <AOSProvider>
+            <Header />
+            {children}
+            <Footer />
+          </AOSProvider>
+        </StoreProvider>
       </body>
     </html>
   );

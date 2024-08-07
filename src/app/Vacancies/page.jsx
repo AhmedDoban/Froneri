@@ -1,16 +1,25 @@
 "use client";
 import Image from "next/image";
 import "./Vacancies.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ResponsivePagination from "react-responsive-pagination";
 import { Countries } from "../Countries.js";
 import VacancyBox from "./VacancyBox/VacancyBox.jsx";
+import { useDispatch, useSelector } from "react-redux";
+import { GetVacancies } from "@/Toolkit/Slices/VacanciesSlice";
 
 function Vacancies() {
   const [currentPage, setCurrentPage] = useState(1);
   const [VacanciesBox, SetVacanciesBox] = useState(new Array(150).fill(""));
   const totalPages = VacanciesBox.length / 15;
   const [FilterActive, SetFilterActive] = useState(false);
+
+  const VacanciesData = useSelector((state) => state.Vacancies.AllVacancies);
+  const Dispatch = useDispatch();
+
+  useEffect(() => {
+    Dispatch(GetVacancies());
+  }, []);
 
   return (
     <div className="Vacancies">
